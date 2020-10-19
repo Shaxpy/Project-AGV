@@ -1,0 +1,6 @@
+
+<launch> 
+  <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" />
+  <node name="Server" pkg = "pkg_task0" type="listencircle.py" output = "screen" required = "true"/>
+  <node name="Client" pkg = "pkg_task0" type="talkcircle.py" output = "screen" required = "true"/>
+ </launch>

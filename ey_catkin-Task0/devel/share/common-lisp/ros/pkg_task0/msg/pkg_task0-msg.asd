@@ -1,0 +1,1 @@
+/home/shaxpy/ey_catkin/devel/.private/pkg_task0/share/common-lisp/ros/pkg_task0/msg/pkg_task0-msg.asd

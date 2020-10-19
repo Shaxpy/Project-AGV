@@ -1,0 +1,10 @@
+<launch>
+    
+    <node pkg="pkg_task0" type="webpage_launch.sh" name="webpage-launch" output="screen">
+        <param name="cmd" value="/home/shaxpy/ey_catkin/src/pkg_task0/launch/webpage-launch.sh"/>
+    </node>
+        
+    <node pkg="pkg_task0" type="node_hello_ros.py" name="node_hello_ros" output="screen"/>
+
+</launch>
+

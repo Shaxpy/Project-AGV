@@ -1,0 +1,1 @@
+/home/shaxpy/ey_catkin/devel/.private/pkg_ros_actions/share/roseus/ros/pkg_ros_actions/manifest.l

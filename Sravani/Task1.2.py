@@ -121,21 +121,18 @@ def obstacle(regions):
         velocity_msg.linear.x = 0
         velocity_msg.angular.z = 0.55
         print(regions['front'],regions['fleft'])   
+        #right obstacle very close 
+    elif regions['fright'] < d :
+        velocity_msg.linear.x = 0.25
+        velocity_msg.angular.z = 0.6
+        print(regions['fright'])
     # right obtacle far away
     elif regions['fright'] > d :
         velocity_msg.linear.x = 0.25
         velocity_msg.angular.z = -0.6
         print(regions['fright'])
-    #right obstacle very close 
-    elif regions['fright'] < d :
-        velocity_msg.linear.x = 0.25
-        velocity_msg.angular.z = 0.6
-        print(regions['fright'])
-    #rigjt object very very far
-    elif (regions['fright'] > (1.1)*d) and (regions['fleft'] > 5*d):
-        velocity_msg.linear.x = 0.4
-        velocity_msg.angular.z = -0.83
-        print(regions['fright'],regions['fleft'])
+
+
 
     # Publishing Angular and Linear Velocities
     pub.publish(velocity_msg)

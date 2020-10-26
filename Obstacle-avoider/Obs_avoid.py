@@ -114,11 +114,8 @@ def obstacle(regions):
         angular_z = -0.68
     elif regions['front'] > d and regions['fleft'] > d and regions['left'] > d and regions['right'] < d:
         state_description = 'Goal'
-        while True:
-            goal(12.5, -1)
 
     else:
-        goal(12.5, -1)
 
         state_description = 'unknown case'
     # go_to_waypoint(12.5, 0)

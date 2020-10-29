@@ -10,7 +10,6 @@ import math
 
 
 def odom_callback(msg):
-    global pose
     global x
     global y
     global theta
@@ -18,9 +17,7 @@ def odom_callback(msg):
     x = round(msg.pose.pose.position.x, 1)
     y = round(msg.pose.pose.position.y, 1)
     rot_q = msg.pose.pose.orientation
-    pose = (roll, pitch, th) = euler_from_quaternion(
-        [rot_q.x, rot_q.y, rot_q.z, rot_q.w])
-
+    th = euler_from_quaternion([rot_q.x, rot_q.y, rot_q.z, rot_q.w])[2]
     theta = round(th, 1)
 
 

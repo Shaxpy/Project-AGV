@@ -40,12 +40,16 @@ def control_loop():
     rospy.spin()
 
 # WayPoint - A function to set the net waypoint
+
+
 def waypoint(t):
     x = ((math.pi*t)/180)
     y = (2*(math.sin(x))*(math.sin(x/2)))
     return [round(x, 1), round(y, 1)]
 
 # Odometry Callback - A callback function used to extract the information from the subscribed topic
+
+
 def odom_callback(msg):
     global x, y, theta, position_
 
@@ -57,6 +61,8 @@ def odom_callback(msg):
     theta = round(th, 1)
 
 # Laser Callback - A callback function used to extract the information from the subscribed topic
+
+
 def laser_callback(msg):
     global regions
     regions = {
@@ -68,6 +74,8 @@ def laser_callback(msg):
     }
 
 # Go To Goal: A function to go to a desired point in the x-y plane
+
+
 def go_to_goal(final_x, final_y):
     # Calculating difference in current and desired points
     inc_x = final_x - x
@@ -111,31 +119,27 @@ def go_to_goal(final_x, final_y):
     # Publishing Angular and Linear Velocities
     pub.publish(velocity_msg)
 
-# Obstacle Avoider - A function to avoid any obstacle in path
+# Obstacle Avoider - A function to avoid any obstacle in path by maintaining a safe distance(d) from the obstacle
+
+
 def obstacle(regions):
     velocity_msg.linear.x = 0
     velocity_msg.angular.z = 0
-    d = 1.5
-    # Moving Straight
-    if regions['front'] > d and regions['fleft'] > d and regions['left'] > d and regions['right'] > d:
-        velocity_msg.linear.x = 0.9
-        velocity_msg.angular.z = 0
-    # Turning Left
-    elif regions['front'] < d and regions['left'] > d and regions['right'] > d and regions['fleft'] < d:
+    d = 1.2
+    # Obstacle detected
+    if regions['front'] < d and regions['fleft'] < d:
         velocity_msg.linear.x = 0
-        velocity_msg.angular.z = 0.55
-    # Turning More Left
-    elif regions['front'] < d and regions['left'] > d and regions['fright'] < d and regions['fleft'] > d:
-        velocity_msg.linear.x = 0.1
-        velocity_msg.angular.z = 0.58
-    # Edge Point
-    elif regions['front'] > d and regions['fleft'] > d and regions['fright'] < d:
-        velocity_msg.linear.x = 0.8
-        velocity_msg.angular.z = 0
-    # Turning Right
-    elif regions['front'] > d and regions['left'] > d and regions['fleft'] > d and regions['right'] < d:
-        velocity_msg.linear.x = 0.3
-        velocity_msg.angular.z = -0.68
+        velocity_msg.angular.z = 0.65
+
+    # Going too close to the obstacle
+    elif regions['fright'] < d:
+        velocity_msg.linear.x = 0.27
+        velocity_msg.angular.z = 0.62
+
+    # Going too far from the obstacle
+    elif regions['fright'] > d:
+        velocity_msg.linear.x = 0.27
+        velocity_msg.angular.z = -0.62
 
     # Publishing Angular and Linear Velocities
     pub.publish(velocity_msg)
@@ -159,6 +163,8 @@ def distance_to_line(p0):
     return distance
 
 # Path Tracing - A function to make the bot follow a given path using the generated waypoints
+
+
 def path_tracing(pangle):
 
     while not rospy.is_shutdown():
@@ -180,7 +186,7 @@ def path_tracing(pangle):
 
             # Tolerance
             theta_prec = math.pi/90
-            dist_prec = 0.3
+            dist_prec = 0.25
 
             # Calculating distance between current and desired points
             err_pos = math.sqrt(pow(goal.y - y, 2) + pow(goal.x - x, 2))
@@ -202,8 +208,10 @@ def path_tracing(pangle):
 
             # Checking and Generating Waypoints
             elif (err_pos < dist_prec):
+
                 # Before 2pi [Path Tracing]
                 if (pangle < 360):
+
                     path_tracing(pangle+45)
 
                 # After 2pi [Obstacle Avoidance]
@@ -218,7 +226,7 @@ def path_tracing(pangle):
                         distance_position_to_line = distance_to_line(position_)
 
                         # Condition for Go To Goal
-                        if distance_position_to_line < 1.0 and (regions['front'] > d and regions['fleft'] > d):
+                        if distance_position_to_line < 0.3 and (regions['front'] > d and regions['fleft'] > d):
                             go_to_goal(final_x, final_y)
 
                         # Condition for Obstacle Avoider

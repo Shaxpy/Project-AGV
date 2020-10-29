@@ -1,1 +1,0 @@
-/home/shaxpy/ey_catkin/devel/.private/pkg_task0/lib/python2.7/dist-packages/pkg_task0/__init__.py

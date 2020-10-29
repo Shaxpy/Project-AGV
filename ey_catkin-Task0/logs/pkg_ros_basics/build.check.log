@@ -1,4 +1,0 @@
-CMake Error: The source directory "/home/shaxpy/ey_catkin/src/pkg_ros_basics" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.
-Makefile:530: recipe for target 'cmake_check_build_system' failed
-make: *** [cmake_check_build_system] Error 1

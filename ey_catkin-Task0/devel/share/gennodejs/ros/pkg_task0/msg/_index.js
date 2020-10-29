@@ -1,1 +1,0 @@
-/home/shaxpy/ey_catkin/devel/.private/pkg_task0/share/gennodejs/ros/pkg_task0/msg/_index.js

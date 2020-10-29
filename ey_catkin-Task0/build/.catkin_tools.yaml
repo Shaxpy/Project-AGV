@@ -1,6 +1,0 @@
-devel_space: /home/shaxpy/ey_catkin/devel
-install: false
-install_space: /home/shaxpy/ey_catkin/install
-profile: default
-source_space: /home/shaxpy/ey_catkin/src
-workspace: /home/shaxpy/ey_catkin

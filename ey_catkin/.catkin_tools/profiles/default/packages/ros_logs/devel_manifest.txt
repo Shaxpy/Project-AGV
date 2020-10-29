@@ -1,0 +1,5 @@
+ros_logs
+/home/shaxpy/ey_catkin/devel/.private/ros_logs/cmake.lock /home/shaxpy/ey_catkin/devel/./cmake.lock
+/home/shaxpy/ey_catkin/devel/.private/ros_logs/share/ros_logs/cmake/ros_logsConfig-version.cmake /home/shaxpy/ey_catkin/devel/share/ros_logs/cmake/ros_logsConfig-version.cmake
+/home/shaxpy/ey_catkin/devel/.private/ros_logs/share/ros_logs/cmake/ros_logsConfig.cmake /home/shaxpy/ey_catkin/devel/share/ros_logs/cmake/ros_logsConfig.cmake
+/home/shaxpy/ey_catkin/devel/.private/ros_logs/lib/pkgconfig/ros_logs.pc /home/shaxpy/ey_catkin/devel/lib/pkgconfig/ros_logs.pc

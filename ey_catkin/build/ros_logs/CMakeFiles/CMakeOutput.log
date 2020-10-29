@@ -1,0 +1,673 @@
+The system is: Linux - 5.4.0-51-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc 
+Build flags: -march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/shaxpy/anaconda3/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/3.10.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++ 
+Build flags: -fvisibility-inlines-hidden;-std=c++17;-fmessage-length=0;-march=nocona;-mtune=haswell;-ftree-vectorize;-fPIC;-fstack-protector-strong;-fno-plt;-O2;-ffunction-sections;-pipe;-isystem;/home/shaxpy/anaconda3/include
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15f3e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15f3e.dir/build.make CMakeFiles/cmTC_15f3e.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15f3e.dir/testCCompiler.c.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -o CMakeFiles/cmTC_15f3e.dir/testCCompiler.c.o   -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_15f3e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15f3e.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_15f3e.dir/testCCompiler.c.o  -o cmTC_15f3e 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c4df0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c4df0.dir/build.make CMakeFiles/cmTC_c4df0.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -o CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_c4df0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4df0.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib -v -rdynamic CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o  -o cmTC_c4df0 
+Reading specs from /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/specs
+COLLECT_GCC=/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc
+COLLECT_LTO_WRAPPER=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper
+Target: x86_64-conda_cos6-linux-gnu
+Configured with: /home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=x86_64-conda_cos6-linux-gnu --prefix=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built --with-sysroot=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built/x86_64-conda_cos6-linux-gnu/sysroot --enable-languages=c,c++,fortran,objc,obj-c++ --with-pkgversion='crosstool-NG 1.23.0.449-a04d0' --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-libmpx --with-gmp=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-mpfr=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-mpc=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-isl=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-multilib --with-local-prefix=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built/x86_64-conda_cos6-linux-gnu/sysroot --enable-long-long --enable-default-pie
+Thread model: posix
+gcc version 7.3.0 (crosstool-NG 1.23.0.449-a04d0) 
+COMPILER_PATH=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/:/home/shaxpy/anaconda3/bin/../libexec/gcc/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/
+LIBRARY_PATH=/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/:/home/shaxpy/anaconda3/bin/../lib/gcc/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/shaxpy/anaconda3/include' '-L/home/shaxpy/anaconda3/lib' '-v' '-rdynamic' '-o' 'cmTC_c4df0'
+ /home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/collect2 -plugin /home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccToFSkq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c4df0 /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtbeginS.o -L/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0 -L/home/shaxpy/anaconda3/bin/../lib/gcc -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib -rpath /home/shaxpy/anaconda3/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/shaxpy/anaconda3/lib -rpath-link /home/shaxpy/anaconda3/lib CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtendS.o /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/shaxpy/anaconda3/include' '-L/home/shaxpy/anaconda3/lib' '-v' '-rdynamic' '-o' 'cmTC_c4df0'
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_c4df0/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_c4df0.dir/build.make CMakeFiles/cmTC_c4df0.dir/build]
+  ignore line: [make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -o CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.10/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_c4df0]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c4df0.dir/link.txt --verbose=1]
+  ignore line: [/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib -v -rdynamic CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o  -o cmTC_c4df0 ]
+  ignore line: [Reading specs from /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/specs]
+  ignore line: [COLLECT_GCC=/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda_cos6-linux-gnu]
+  ignore line: [Configured with: /home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=x86_64-conda_cos6-linux-gnu --prefix=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built --with-sysroot=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built/x86_64-conda_cos6-linux-gnu/sysroot --enable-languages=c,c++,fortran,objc,obj-c++ --with-pkgversion='crosstool-NG 1.23.0.449-a04d0' --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-libmpx --with-gmp=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-mpfr=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-mpc=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-isl=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-multilib --with-local-prefix=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built/x86_64-conda_cos6-linux-gnu/sysroot --enable-long-long --enable-default-pie]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (crosstool-NG 1.23.0.449-a04d0) ]
+  ignore line: [COMPILER_PATH=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/:/home/shaxpy/anaconda3/bin/../libexec/gcc/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/:/home/shaxpy/anaconda3/bin/../lib/gcc/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/shaxpy/anaconda3/include' '-L/home/shaxpy/anaconda3/lib' '-v' '-rdynamic' '-o' 'cmTC_c4df0']
+  link line: [ /home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/collect2 -plugin /home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccToFSkq.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c4df0 /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtbeginS.o -L/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0 -L/home/shaxpy/anaconda3/bin/../lib/gcc -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib -rpath /home/shaxpy/anaconda3/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/shaxpy/anaconda3/lib -rpath-link /home/shaxpy/anaconda3/lib CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtendS.o /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+    arg [/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccToFSkq.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_c4df0] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtbeginS.o] ==> ignore
+    arg [-L/home/shaxpy/anaconda3/lib] ==> dir [/home/shaxpy/anaconda3/lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0] ==> dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0]
+    arg [-L/home/shaxpy/anaconda3/bin/../lib/gcc] ==> dir [/home/shaxpy/anaconda3/bin/../lib/gcc]
+    arg [-L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib] ==> dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib] ==> dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib] ==> dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib] ==> dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib] ==> dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib]
+    arg [-rpath] ==> ignore
+    arg [/home/shaxpy/anaconda3/lib] ==> ignore
+    arg [-O2] ==> ignore
+    arg [--sort-common] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/home/shaxpy/anaconda3/lib] ==> ignore
+    arg [-rpath-link] ==> ignore
+    arg [/home/shaxpy/anaconda3/lib] ==> ignore
+    arg [CMakeFiles/cmTC_c4df0.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtendS.o] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> ignore
+  collapse library dir [/home/shaxpy/anaconda3/lib] ==> [/home/shaxpy/anaconda3/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0] ==> [/home/shaxpy/anaconda3/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../lib/gcc] ==> [/home/shaxpy/anaconda3/lib/gcc]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit dirs: [/home/shaxpy/anaconda3/lib;/home/shaxpy/anaconda3/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0;/home/shaxpy/anaconda3/lib/gcc;/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/lib;/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/lib;/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2611f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2611f.dir/build.make CMakeFiles/cmTC_2611f.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2611f.dir/feature_tests.c.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -std=c11 -o CMakeFiles/cmTC_2611f.dir/feature_tests.c.o   -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/feature_tests.c
+Linking C executable cmTC_2611f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2611f.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_2611f.dir/feature_tests.c.o  -o cmTC_2611f 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3175f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3175f.dir/build.make CMakeFiles/cmTC_3175f.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3175f.dir/feature_tests.c.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -std=c99 -o CMakeFiles/cmTC_3175f.dir/feature_tests.c.o   -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/feature_tests.c
+Linking C executable cmTC_3175f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3175f.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_3175f.dir/feature_tests.c.o  -o cmTC_3175f 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_43d6e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43d6e.dir/build.make CMakeFiles/cmTC_43d6e.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43d6e.dir/feature_tests.c.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -std=c90 -o CMakeFiles/cmTC_43d6e.dir/feature_tests.c.o   -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/feature_tests.c
+Linking C executable cmTC_43d6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43d6e.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_43d6e.dir/feature_tests.c.o  -o cmTC_43d6e 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ca536/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ca536.dir/build.make CMakeFiles/cmTC_ca536.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ca536.dir/testCXXCompiler.cxx.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++    -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -o CMakeFiles/cmTC_ca536.dir/testCXXCompiler.cxx.o -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_ca536
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ca536.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_ca536.dir/testCXXCompiler.cxx.o  -o cmTC_ca536 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6e6a1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6e6a1.dir/build.make CMakeFiles/cmTC_6e6a1.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++    -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -o CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_6e6a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e6a1.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib -v -rdynamic CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6e6a1 
+Reading specs from /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/specs
+COLLECT_GCC=/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++
+COLLECT_LTO_WRAPPER=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper
+Target: x86_64-conda_cos6-linux-gnu
+Configured with: /home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=x86_64-conda_cos6-linux-gnu --prefix=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built --with-sysroot=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built/x86_64-conda_cos6-linux-gnu/sysroot --enable-languages=c,c++,fortran,objc,obj-c++ --with-pkgversion='crosstool-NG 1.23.0.449-a04d0' --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-libmpx --with-gmp=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-mpfr=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-mpc=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-isl=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-multilib --with-local-prefix=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built/x86_64-conda_cos6-linux-gnu/sysroot --enable-long-long --enable-default-pie
+Thread model: posix
+gcc version 7.3.0 (crosstool-NG 1.23.0.449-a04d0) 
+COMPILER_PATH=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/:/home/shaxpy/anaconda3/bin/../libexec/gcc/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/
+LIBRARY_PATH=/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/:/home/shaxpy/anaconda3/bin/../lib/gcc/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++1z' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/shaxpy/anaconda3/include' '-L/home/shaxpy/anaconda3/lib' '-v' '-rdynamic' '-o' 'cmTC_6e6a1' '-shared-libgcc'
+ /home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/collect2 -plugin /home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMcnvjb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6e6a1 /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtbeginS.o -L/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0 -L/home/shaxpy/anaconda3/bin/../lib/gcc -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib -rpath /home/shaxpy/anaconda3/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/shaxpy/anaconda3/lib -rpath-link /home/shaxpy/anaconda3/lib CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtendS.o /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crtn.o
+COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++1z' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/shaxpy/anaconda3/include' '-L/home/shaxpy/anaconda3/lib' '-v' '-rdynamic' '-o' 'cmTC_6e6a1' '-shared-libgcc'
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_6e6a1/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_6e6a1.dir/build.make CMakeFiles/cmTC_6e6a1.dir/build]
+  ignore line: [make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++    -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -o CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.10/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_6e6a1]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e6a1.dir/link.txt --verbose=1]
+  ignore line: [/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib -v -rdynamic CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_6e6a1 ]
+  ignore line: [Reading specs from /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/specs]
+  ignore line: [COLLECT_GCC=/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda_cos6-linux-gnu]
+  ignore line: [Configured with: /home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-build_pc-linux-gnu --target=x86_64-conda_cos6-linux-gnu --prefix=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built --with-sysroot=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built/x86_64-conda_cos6-linux-gnu/sysroot --enable-languages=c,c++,fortran,objc,obj-c++ --with-pkgversion='crosstool-NG 1.23.0.449-a04d0' --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-libmpx --with-gmp=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-mpfr=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-mpc=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --with-isl=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/.build/x86_64-conda_cos6-linux-gnu/buildtools --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-multilib --with-local-prefix=/home/rdonnelly/mc/conda-bld/compilers_linux-64_1534865402226/work/gcc_built/x86_64-conda_cos6-linux-gnu/sysroot --enable-long-long --enable-default-pie]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 7.3.0 (crosstool-NG 1.23.0.449-a04d0) ]
+  ignore line: [COMPILER_PATH=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/:/home/shaxpy/anaconda3/bin/../libexec/gcc/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/:/home/shaxpy/anaconda3/bin/../lib/gcc/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/:/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/:/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fvisibility-inlines-hidden' '-std=c++1z' '-fmessage-length=0' '-march=nocona' '-mtune=haswell' '-ftree-vectorize' '-fPIC' '-fstack-protector-strong' '-fno-plt' '-O2' '-ffunction-sections' '-pipe' '-isystem' '/home/shaxpy/anaconda3/include' '-L/home/shaxpy/anaconda3/lib' '-v' '-rdynamic' '-o' 'cmTC_6e6a1' '-shared-libgcc']
+  link line: [ /home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/collect2 -plugin /home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/liblto_plugin.so -plugin-opt=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMcnvjb.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6e6a1 /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtbeginS.o -L/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0 -L/home/shaxpy/anaconda3/bin/../lib/gcc -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib -L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib -L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib -rpath /home/shaxpy/anaconda3/lib -O2 --sort-common --as-needed -z relro -z now --disable-new-dtags --gc-sections -rpath /home/shaxpy/anaconda3/lib -rpath-link /home/shaxpy/anaconda3/lib CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtendS.o /home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+    arg [/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/shaxpy/anaconda3/bin/../libexec/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMcnvjb.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_6e6a1] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtbeginS.o] ==> ignore
+    arg [-L/home/shaxpy/anaconda3/lib] ==> dir [/home/shaxpy/anaconda3/lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0] ==> dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0]
+    arg [-L/home/shaxpy/anaconda3/bin/../lib/gcc] ==> dir [/home/shaxpy/anaconda3/bin/../lib/gcc]
+    arg [-L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib] ==> dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib] ==> dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib] ==> dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib] ==> dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib]
+    arg [-L/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib] ==> dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib]
+    arg [-rpath] ==> ignore
+    arg [/home/shaxpy/anaconda3/lib] ==> ignore
+    arg [-O2] ==> ignore
+    arg [--sort-common] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-znow] ==> ignore
+    arg [--disable-new-dtags] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [-rpath] ==> ignore
+    arg [/home/shaxpy/anaconda3/lib] ==> ignore
+    arg [-rpath-link] ==> ignore
+    arg [/home/shaxpy/anaconda3/lib] ==> ignore
+    arg [CMakeFiles/cmTC_6e6a1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/crtendS.o] ==> ignore
+    arg [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> ignore
+  collapse library dir [/home/shaxpy/anaconda3/lib] ==> [/home/shaxpy/anaconda3/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0] ==> [/home/shaxpy/anaconda3/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../lib/gcc] ==> [/home/shaxpy/anaconda3/lib/gcc]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib/../lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib/../lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/lib]
+  collapse library dir [/home/shaxpy/anaconda3/bin/../x86_64-conda_cos6-linux-gnu/sysroot/usr/lib] ==> [/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit dirs: [/home/shaxpy/anaconda3/lib;/home/shaxpy/anaconda3/lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0;/home/shaxpy/anaconda3/lib/gcc;/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/lib;/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/lib;/home/shaxpy/anaconda3/x86_64-conda_cos6-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5a8b8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5a8b8.dir/build.make CMakeFiles/cmTC_5a8b8.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5a8b8.dir/feature_tests.cxx.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++    -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -std=c++1z -o CMakeFiles/cmTC_5a8b8.dir/feature_tests.cxx.o -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_5a8b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a8b8.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_5a8b8.dir/feature_tests.cxx.o  -o cmTC_5a8b8 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cac93/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cac93.dir/build.make CMakeFiles/cmTC_cac93.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cac93.dir/feature_tests.cxx.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++    -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -std=c++14 -o CMakeFiles/cmTC_cac93.dir/feature_tests.cxx.o -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_cac93
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cac93.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_cac93.dir/feature_tests.cxx.o  -o cmTC_cac93 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7418e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7418e.dir/build.make CMakeFiles/cmTC_7418e.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7418e.dir/feature_tests.cxx.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++    -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -std=c++11 -o CMakeFiles/cmTC_7418e.dir/feature_tests.cxx.o -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_7418e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7418e.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_7418e.dir/feature_tests.cxx.o  -o cmTC_7418e 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_59983/fast"
+/usr/bin/make -f CMakeFiles/cmTC_59983.dir/build.make CMakeFiles/cmTC_59983.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_59983.dir/feature_tests.cxx.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++    -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -std=c++98 -o CMakeFiles/cmTC_59983.dir/feature_tests.cxx.o -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_59983
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59983.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-c++  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_59983.dir/feature_tests.cxx.o  -o cmTC_59983 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ccdc4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ccdc4.dir/build.make CMakeFiles/cmTC_ccdc4.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ccdc4.dir/CheckIncludeFile.c.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include    -o CMakeFiles/cmTC_ccdc4.dir/CheckIncludeFile.c.o   -c /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ccdc4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccdc4.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_ccdc4.dir/CheckIncludeFile.c.o  -o cmTC_ccdc4 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_26f1a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_26f1a.dir/build.make CMakeFiles/cmTC_26f1a.dir/build
+make[1]: Entering directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26f1a.dir/CheckFunctionExists.c.o
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_26f1a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_26f1a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26f1a.dir/link.txt --verbose=1
+/home/shaxpy/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/shaxpy/anaconda3/include -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/shaxpy/anaconda3/lib -Wl,-rpath-link,/home/shaxpy/anaconda3/lib -L/home/shaxpy/anaconda3/lib  -rdynamic CMakeFiles/cmTC_26f1a.dir/CheckFunctionExists.c.o  -o cmTC_26f1a -lpthread 
+make[1]: Leaving directory '/home/shaxpy/ey_catkin/build/ros_logs/CMakeFiles/CMakeTmp'
+
+

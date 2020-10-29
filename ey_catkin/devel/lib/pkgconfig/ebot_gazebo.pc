@@ -1,0 +1,1 @@
+/home/shaxpy/ey_catkin/devel/.private/ebot_gazebo/lib/pkgconfig/ebot_gazebo.pc

@@ -1,0 +1,1 @@
+/home/shaxpy/ey_catkin/devel/.private/ebot_description/lib/pkgconfig/ebot_description.pc

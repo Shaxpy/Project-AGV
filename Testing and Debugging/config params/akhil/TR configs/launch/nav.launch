@@ -1,0 +1,36 @@
+<launch>
+
+    <!--including the launch file with a navigation world-->
+    <include file="$(find ebot_description)/launch/nav_test.launch" />
+    <!-- including launch file for localization using AMCL -->
+    <include file="$(find ebot_nav)/launch/amcl_demo.launch" />
+     <!-- including launch file for visualizing in rviz -->
+    <include file="$(find ebot_description)/launch/ebot_visualize.launch"/>
+    
+
+    <arg name="base_global_planner" default="navfn/NavfnROS"/>
+    <arg name="base_local_planner" default="base_local_planner/TrajectoryPlannerROS"/>
+
+
+   
+
+      <!-- Move base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find ebot_nav)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find ebot_nav)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find ebot_nav)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find ebot_nav)/config/global_costmap_params.yaml" command="load" />
+
+<param name="base_global_planner" value="$(arg base_global_planner)"/>
+        <param name="base_local_planner" value="$(arg base_local_planner)"/>  
+   
+<rosparam file="$(find ebot_nav)/config/trajectory_planner.yaml" command="load" />
+
+<!--
+    <param name="move_base/TrajectoryPlannerROS/yaw_goal_tolerance" value="1.0"/>
+    <param name="move_base/TrajectoryPlannerROS/xy_goal_tolerance" value="1.0"/>
+-->
+  </node>
+
+</launch>
+

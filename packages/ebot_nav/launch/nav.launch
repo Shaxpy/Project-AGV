@@ -28,7 +28,7 @@
 
   </node>
 
-  <!--<node pkg="ebot_nav" name="seq" type="seq.py" >-->
+  <node pkg="ebot_nav" name="seq" type="seq.py" > </node>
 
 </launch>
 

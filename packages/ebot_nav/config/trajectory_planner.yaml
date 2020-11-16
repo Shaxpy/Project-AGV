@@ -1,14 +1,14 @@
+#low computation power
 controller_frequency: 5.0
 TrajectoryPlannerROS:
-  max_vel_x: 0.35
+  max_vel_x: 0.3
   min_vel_x: 0.07
   max_vel_theta: 5.0
   min_vel_theta: -5.0
-  min_in_place_vel_theta: 3.6
-  acc_lim_theta: 4.9
-  acc_lim_x: 2.7
+  min_in_place_vel_theta: 3.0
+  acc_lim_theta: 4.2
+  acc_lim_x: 2.5
   acc_lim_y: 0
-  escape_vel: -0.1
   holonomic_robot: false
   dwa: false
   goal_distance_bias: 4.5
@@ -17,3 +17,23 @@ TrajectoryPlannerROS:
   vx_samples: 20
   yaw_goal_tolerance: 0.3
   xy_goal_tolerance: 0.3
+#mid computation power
+# controller_frequency: 5.0
+# TrajectoryPlannerROS:
+#   max_vel_x: 0.35
+#   min_vel_x: 0.07
+#   max_vel_theta: 5.0
+#   min_vel_theta: -5.0
+#   min_in_place_vel_theta: 3.6
+#   acc_lim_theta: 4.9
+#   acc_lim_x: 2.7
+#   acc_lim_y: 0
+#   escape_vel: -0.1
+#   holonomic_robot: false
+#   dwa: false
+#   goal_distance_bias: 4.5
+#   path_distance_bias: 4.5
+#   vtheta_samples: 50
+#   vx_samples: 20
+#   yaw_goal_tolerance: 0.3
+#   xy_goal_tolerance: 0.3

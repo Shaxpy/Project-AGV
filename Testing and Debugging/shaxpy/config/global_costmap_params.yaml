@@ -1,3 +1,13 @@
+# global_costmap:
+#   global_frame: map
+#   robot_base_frame: ebot_base
+#   update_frequency: 3.0 #before: 5.0
+#   publish_frequency: 0.5 #before 0.5
+#   static_map: true
+#   transform_tolerance: 0.5
+#   cost_scaling_factor: 3.0
+#   inflation_radius: 1.75
+
 global_costmap:
   global_frame: map
   robot_base_frame: ebot_base
@@ -6,5 +16,5 @@ global_costmap:
   static_map: true
   transform_tolerance: 0.5
   cost_scaling_factor: 0.55
-  inflation_radius: 0.75
+  inflation_radius: 0.9
   lethal cost: 253

@@ -1,7 +1,22 @@
-obstacle_range: 3.5
-raytrace_range: 4.0
+# obstacle_range: 3.5
+# raytrace_range: 4.0
+# footprint: [[-0.310, -0.26], [-0.310, 0.26], [0.310, 0.26], [0.310, -0.26]]
+# inflation_radius: 1.75
+# transform_tolerance: 0.5
+
+# observation_sources: scan
+# scan:
+#   data_type: LaserScan
+#   topic: /ebot/laser/scan
+#   marking: true
+#   clearing: true
+
+# map_type: costmap
+
+obstacle_range: 4.5
+raytrace_range: 5.0
 footprint: [[-0.310, -0.26], [-0.310, 0.26], [0.310, 0.26], [0.310, -0.26]]
-inflation_radius: 1.75
+inflation_radius: 0.57
 transform_tolerance: 0.5
 
 observation_sources: scan

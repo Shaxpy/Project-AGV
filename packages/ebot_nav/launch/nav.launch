@@ -1,7 +1,7 @@
 <launch>
 
     <!--including the launch file with a navigation world -->
-    <include file="$(find ebot_description)/launch/task2.launch" /> 
+    <include file="$(find ebot_description)/launch/task2.launch" />
 	
     <!-- including launch file for localization using AMCL -->
     <include file="$(find ebot_nav)/launch/amcl_demo.launch" />

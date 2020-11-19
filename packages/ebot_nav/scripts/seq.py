@@ -42,7 +42,7 @@ def waypoints():
         # Rospy node for SimpleActionClient to publish and subscribe
     rospy.init_node('movebase_client_py')
     points_seq = [-9.1, -1.2, 10.7, 10.5,
-                      12.6, -1.7, 18.2, -1.4, -2.0, 4.0]
+                      12.6, -1.81, 18.2, -1.4, -2.0, 4.0]
     for i in [0, 2, 4, 6, 8]:
         result = client_coordinates(points_seq[i], points_seq[i+1])
     return result

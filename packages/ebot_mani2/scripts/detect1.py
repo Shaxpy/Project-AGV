@@ -11,6 +11,44 @@ import math
 import roslib
 import tf2_ros
 from math import pi
+from object_msgs.msg import ObjectPose
+from geometry_msgs.msg import Point
+
+global battery, coke, glue
+coke = Point()
+battery = Point()
+glue = Point()
+
+
+def listener_coord():
+
+    flag = False
+    while(flag != True):
+        rospy.Subscriber('/detection_info', ObjectPose, callback)
+        if(glue.z != 0.0):
+            flag = True
+
+
+def callback(data):
+
+    # rospy.loginfo("Data Received : (%s , %.2f, %.2f , %.2f)", data.name, data.pose.pose.position.x, data.pose.pose.position.y, data.pose.pose.position.z )
+    if(data.name == "Battery" and data.pose.header.seq == 1):
+
+        battery.x = data.pose.pose.position.x
+        battery.y = data.pose.pose.position.y
+        battery.z = data.pose.pose.position.z
+
+    if(data.name == "Coke" and data.pose.header.seq == 2):
+
+        coke.x = data.pose.pose.position.x
+        coke.y = data.pose.pose.position.y
+        coke.z = data.pose.pose.position.z
+
+    if(data.name == "Glue" and data.pose.header.seq == 3):
+
+        glue.x = data.pose.pose.position.x
+        glue.y = data.pose.pose.position.y
+        glue.z = data.pose.pose.position.z
 
 
 class Ur5Moveit:
@@ -180,39 +218,8 @@ def main():
     close2 = [math.radians(16)]
     openz = [math.radians(0)]
 
-    print "arm going to start pose"
-    ur5.go_to_pose(armStart)
-    rospy.sleep(1)
-
     print "getting coords"
-    tfbuffer = tf2_ros.Buffer()
-
-    listener = tf2_ros.TransformListener(tfbuffer)
-    rate = rospy.Rate(10.0)
-    while not rospy.is_shutdown():
-        try:
-            # Replace 'object_43' with appropriate name.
-            trans1 = tfbuffer.lookup_transform(
-                'ebot_base', 'object_43', rospy.Time())
-            print "Battery:"
-            # object_1 is a vector containing x, y, z values of object 1.
-            # object_1.x gives x coordinate of object 1.
-            battery = trans1.transform.translation
-            print battery
-            trans2 = tfbuffer.lookup_transform(
-                'ebot_base', 'object_44', rospy.Time())
-            print "Coke:"
-            coke = trans2.transform.translation
-            print coke
-            trans3 = tfbuffer.lookup_transform(
-                'ebot_base', 'object_45', rospy.Time())
-            glue = trans3.transform.translation
-            print "Glue"
-            print glue
-
-            break
-        except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
-            print "Error"
+    listener_coord()
 
     print "Openning grippper"
     ur5.set_gripper_angles(openz)
@@ -271,8 +278,6 @@ def main():
     ur5_pose_8.orientation.z = -0.32419815
     ur5_pose_8.orientation.w = 0.01835316
 
-    print ur5_pose_1
-
     print "getting some coke"
     ur5.go_to_pose(ur5_pose_1)
     ur5.go_to_pose(ur5_pose_2)
@@ -281,37 +286,37 @@ def main():
     ur5.set_gripper_angles(close)
     rospy.sleep(2)
 
-    print "dropping the coke"
-    ur5.set_joint_angles(armDrop)
-    ur5.set_gripper_angles(openz)
-    rospy.sleep(2)
+    # print "dropping the coke"
+    # ur5.set_joint_angles(armDrop)
+    # ur5.set_gripper_angles(openz)
+    # rospy.sleep(2)
 
-    ur5.go_to_pose(armStart)
-    print "getting battery"
-    ur5.go_to_pose(ur5_pose_4)
-    ur5.go_to_pose(ur5_pose_5)
+    # ur5.go_to_pose(armStart)
+    # print "getting battery"
+    # ur5.go_to_pose(ur5_pose_4)
+    # ur5.go_to_pose(ur5_pose_5)
 
-    print "grabbing the battery"
-    ur5.set_gripper_angles(close2)
-    rospy.sleep(2)
+    # print "grabbing the battery"
+    # ur5.set_gripper_angles(close2)
+    # rospy.sleep(2)
 
-    print "dropping the battery"
-    ur5.set_joint_angles(armDrop)
-    ur5.set_gripper_angles(openz)
-    rospy.sleep(2)
+    # print "dropping the battery"
+    # ur5.set_joint_angles(armDrop)
+    # ur5.set_gripper_angles(openz)
+    # rospy.sleep(2)
 
-    ur5.go_to_pose(armStart)
-    print "getting glue"
-    ur5.go_to_pose(ur5_pose_7)
-    ur5.go_to_pose(ur5_pose_8)
+    # ur5.go_to_pose(armStart)
+    # print "getting glue"
+    # ur5.go_to_pose(ur5_pose_7)
+    # ur5.go_to_pose(ur5_pose_8)
 
-    print "grabbing the glue"
-    ur5.set_gripper_angles(close3)
-    rospy.sleep(2)
+    # print "grabbing the glue"
+    # ur5.set_gripper_angles(close3)
+    # rospy.sleep(2)
 
-    print "dropping the glue"
-    ur5.set_joint_angles(armDrop)
-    ur5.set_gripper_angles(openz)
+    # print "dropping the glue"
+    # ur5.set_joint_angles(armDrop)
+    # ur5.set_gripper_angles(openz)
 
     del ur5
 

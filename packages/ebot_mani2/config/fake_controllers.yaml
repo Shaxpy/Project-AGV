@@ -7,11 +7,11 @@ controller_list:
       - wrist_1_joint
       - wrist_2_joint
       - wrist_3_joint
-  - name: fake_grippper_controller_controller
+  - name: fake_gripper_controller_controller
     joints:
       - gripper_finger1_joint
 initial:  # Define initial robot poses.
   - group: arm_controller
     pose: straightUp
-  - group: grippper_controller
+  - group: gripper_controller
     pose: close

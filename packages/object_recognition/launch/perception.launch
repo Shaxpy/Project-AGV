@@ -1,8 +1,4 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-
 <launch> 
-	<arg name = "camera_rgb_topic" default = "/camera/color/image_raw2" />
-	<node name = "find_object_2d_node" pkg = "find_object_2d" type = "find_object_2d" output = "screen">
-		<remap from = "image" to = "$(arg camera_rgb_topic)"/>
-	</node>
+	<node pkg="ebot_mani2" name="final" type="final.py" ></node>
+<node pkg="ebot_mani2" name="camera_arm" type="camera_arm.py" ></node>
 </launch>

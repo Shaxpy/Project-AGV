@@ -1,0 +1,35 @@
+<launch>
+
+    <!--including the launch file with a navigation world
+    <include file="$(find ebot_description)/launch/task5.launch" /> -->
+	
+    <!-- including launch file for localization using AMCL -->
+    <include file="$(find ebot_mani3)/launch/amcl_demo.launch" />
+     <!-- including launch file for visualizing in rviz 
+    <include file="$(find ebot_description)/launch/ebot_visualize.launch"/> -->
+
+    <include file="$(find ebot_mani3)/launch/ur5_bringup_moveit.launch"/>    
+
+    <arg name="base_global_planner" default="navfn/NavfnROS"/>
+   <arg name="base_local_planner" default="base_local_planner/TrajectoryPlannerROS"/> 
+
+   
+
+      <!-- Move base -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find ebot_mani3)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find ebot_mani3)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find ebot_mani3)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find ebot_mani3)/config/global_costmap_params.yaml" command="load" />
+
+<param name="base_global_planner" value="$(arg base_global_planner)"/>
+        <param name="base_local_planner" value="$(arg base_local_planner)"/>  
+   
+<rosparam file="$(find ebot_mani3)/config/trajectory_planner.yaml" command="load" />
+
+  </node>
+<!--
+  <node pkg="ebot_mani3" name="seq" type="seq.py" > </node>
+-->
+</launch>
+

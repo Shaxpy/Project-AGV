@@ -10,7 +10,7 @@
 #   resolution: 0.05 #increase to for higher res 0.025
 #   transform_tolerance: 0.55
 #   cost_scaling_factor: 2.85
-#   inflation_radius: 0.95
+#   inflation_radius: 0.75
 # #  neutral cost: 66
 # #  lethal cost: 222
 

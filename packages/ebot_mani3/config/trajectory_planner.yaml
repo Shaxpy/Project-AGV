@@ -1,43 +1,27 @@
 # controller_frequency: 4.0
 # TrajectoryPlannerROS:
-#   acc_lim_th: 3.2
-#   acc_lim_x: 2.0
-#   acc_lim_y: 0
-
 #   max_vel_x: 0.6
-#   min_vel_x: 0.1
+#   min_vel_x: 0.0016
 #   max_vel_theta: 6.0
 #   min_vel_theta: -6.0
 #   min_in_place_vel_theta: 4.0
-
-#   escape_vel: -0.1
-
+#   acc_lim_x: 4.7
+#   acc_lim_y: 0
 #   holonomic_robot: false
-  
-#   yaw_goal_tolerance: 0.15
-#   xy_goal_tolerance: 0.17
-  
-#   sim_time: 1.5
-#   sim_granularity: 0.025
-#   angular_sim_granularity: 0.025
-#   vx_samples: 25
-#   vtheta_samples: 65
-
-#   goal_distance_bias: 0.8
-#   path_distance_bias: 1.2
-#   gdist_scale: 0.8
-#   pdist_scale: 1.0
-#   occdist_scale: 0.01
-#   heading_lookahead: 0.325
-
 #   dwa: false
-
-#   oscillation_reset_dist: 0.05
+#   escape_vel: -0.15
+#   goal_distance_bias: 4.6
+#   path_distance_bias: 3.4
+#   vtheta_samples: 65
+#   vx_samples: 25
+#   sim_time: 1.5
+#   yaw_goal_tolerance: 0.1
+#   xy_goal_tolerance: 0.22
 # SHAXPY
 controller_frequency: 4.0
 TrajectoryPlannerROS:
-  max_vel_x: 0.48
-  min_vel_x: 0.002
+  max_vel_x: 0.6
+  min_vel_x: 0.1
   max_vel_theta: 6.0
   min_vel_theta: -6.0
   min_in_place_vel_theta: 4.0
@@ -45,10 +29,12 @@ TrajectoryPlannerROS:
   acc_lim_y: 0
   holonomic_robot: false
   dwa: false
-  goal_distance_bias: 4.6
-  path_distance_bias: 3.4
-  vtheta_samples: 50
+  # goal_distance_bias: 2.3
+  # path_distance_bias: 1.57
+  goal_distance_bias: 1.57
+  path_distance_bias: 2.0
+  vtheta_samples: 65
   vx_samples: 25
   sim_time: 1.5
-  yaw_goal_tolerance: 0.1
-  xy_goal_tolerance: 0.22
+  yaw_goal_tolerance: 0.05
+  xy_goal_tolerance: 0.2

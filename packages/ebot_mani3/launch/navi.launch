@@ -1,7 +1,7 @@
 <launch>
 
-    <!--including the launch file with a navigation world
-    <include file="$(find ebot_description)/launch/task5.launch" /> -->
+    <!--including the launch file with a navigation world-->
+    <include file="$(find ebot_description)/launch/task5.launch" /> 
 	
     <!-- including launch file for localization using AMCL -->
     <include file="$(find ebot_mani3)/launch/amcl_demo.launch" />
@@ -28,8 +28,8 @@
 <rosparam file="$(find ebot_mani3)/config/trajectory_planner.yaml" command="load" />
 
   </node>
-<!--
+
   <node pkg="ebot_mani3" name="seq" type="seq.py" > </node>
--->
+
 </launch>
 

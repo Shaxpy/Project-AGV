@@ -22,7 +22,8 @@
 		<param name="object_prefix" value="$(arg object_prefix)" type="str"/>
 		<param name="approx_sync" value="$(arg approx_sync)" type="bool"/>
 		<param name="pnp" value="$(arg pnp)" type="bool"/>
-		<param name="session_path" value="$(find object_recognition)/sess1.bin" type="str"/>
+
+		<param name="session_path" value="$(find object_recognition)/task5_1.bin" type="str"/>
 
 		<remap from="rgb/image_rect_color" to="$(arg rgb_topic)"/>
 		<remap from="depth_registered/image_raw" to="$(arg depth_topic)"/>
@@ -35,9 +36,7 @@
 		<param name="map_frame_id" value="/odom" type="str"/>
 	</node>
 
-<node pkg="ebot_mani2" name="final" type="final.py" ></node>
 
-<node pkg="ebot_mani2" name="camera_arm" type="camera_arm.py" ></node>
 
 </launch>
 

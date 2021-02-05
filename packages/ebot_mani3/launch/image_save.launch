@@ -1,0 +1,17 @@
+
+
+
+
+<launch>
+	<arg name="rgb_topic" default="camera/color/image_raw2"/>
+	<node name="image_saver" pkg="image_view" type="image_saver" respawn="false" output="screen">
+	<remap from="image" to="$(arg rgb_topic)"/>
+	<param name ='filename_format' value='/home/akhiljayan29aj/catkin_ws1/src/pic/d.jpg'/>
+	</node>
+	<node name="print_objects_detected" pkg="find_object_2d	" type="print_objects_detected" respawn="false" output="screen">
+	
+
+	</node>
+
+
+</launch>	

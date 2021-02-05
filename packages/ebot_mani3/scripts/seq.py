@@ -198,6 +198,7 @@ if __name__ == '__main__':
                    math.radians(-29),
                    math.radians(-17)]
 
+<<<<<<< HEAD
         # pantry = [math.radians(-63),
         #           math.radians(30),
         #           math.radians(-93),
@@ -213,13 +214,25 @@ if __name__ == '__main__':
                   math.radians(85)]
 
         close = [math.radians(14)]
+=======
+        pantry = [math.radians(-63),
+                  math.radians(30),
+                  math.radians(-93),
+                  math.radians(-55),
+                  math.radians(-28),
+                  math.radians(97)]
+>>>>>>> 7894b1462e63bee64c715ef1f1f348e2a65045e4
 
         ur5.set_joint_angles(movearm)
 
-        # # pantry outside
+        # # # pantry outside
         client_coordinates(12.96, 1.27, east)
 
+<<<<<<< HEAD
         # pantry inside
+=======
+        # # # pantry inside
+>>>>>>> 7894b1462e63bee64c715ef1f1f348e2a65045e4
         client_coordinates(13.12, -1.0, north)
 
         # # # pantry left table
@@ -227,6 +240,7 @@ if __name__ == '__main__':
 
         ur5.set_joint_angles(pantry)
 
+<<<<<<< HEAD
         # /////////////////////////////////
         print "getting coords"
         tfbuffer = tf2_ros.Buffer()
@@ -287,6 +301,8 @@ if __name__ == '__main__':
 
         ur5.set_joint_angles(movearm)
 
+=======
+>>>>>>> 7894b1462e63bee64c715ef1f1f348e2a65045e4
         # uuid1 = roslaunch.rlutil.get_or_generate_uuid(None, False)
         # roslaunch.configure_logging(uuid1)
         # launch1 = roslaunch.parent.ROSLaunchParent(
@@ -294,6 +310,7 @@ if __name__ == '__main__':
         # launch1.start()
 
         # time.sleep(1)
+<<<<<<< HEAD
 
         # launch1.shutdown()
 
@@ -303,6 +320,17 @@ if __name__ == '__main__':
         # # pantry left table turn toward south
         client_coordinates(14.4, -1.0, south)
 
+=======
+
+        # launch1.shutdown()
+
+        # # rospy.sleep(10)
+        # ur5.set_joint_angles(movearm)
+
+        # # pantry left table turn toward south
+        # client_coordinates(14.4, -1.0, south)
+
+>>>>>>> 7894b1462e63bee64c715ef1f1f348e2a65045e4
         # # # pantry right table
         # client_coordinates(11.4, -1.0, south)
 

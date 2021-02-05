@@ -9,6 +9,8 @@ import geometry_msgs.msg
 import actionlib
 import math
 import roslib
+import time
+import roslaunch
 import tf2_ros
 from math import pi
 from object_msgs.msg import ObjectPose
@@ -196,33 +198,46 @@ if __name__ == '__main__':
                    math.radians(-29),
                    math.radians(-17)]
 
-        pantry = [math.radians(172),
-                  math.radians(-43),
-                  math.radians(-84),
-                  math.radians(228),
-                  math.radians(-254),
-                  math.radians(169)]
+        pantry = [math.radians(-63),
+                  math.radians(30),
+                  math.radians(-93),
+                  math.radians(-55),
+                  math.radians(-28),
+                  math.radians(97)]
 
         ur5.set_joint_angles(movearm)
 
-        # # pantry outside
+        # # # pantry outside
         client_coordinates(12.96, 1.27, east)
 
-        # # pantry inside
+        # # # pantry inside
         client_coordinates(13.12, -1.0, north)
 
-        # # pantry left table
-        client_coordinates(14.4, -1.0, north)
+        # # # pantry left table
+        client_coordinates(14.55, -1.0, north)
 
         ur5.set_joint_angles(pantry)
 
-        # rospy.sleep(10)
+        # uuid1 = roslaunch.rlutil.get_or_generate_uuid(None, False)
+        # roslaunch.configure_logging(uuid1)
+        # launch1 = roslaunch.parent.ROSLaunchParent(
+        #     uuid1, ['/home/akhiljayan29aj/catkin_ws1/src/ebot_mani3/launch/image_save.launch'])
+        # launch1.start()
 
-        # pantry left table turn toward south
+        # time.sleep(1)
+
+        # launch1.shutdown()
+
+        # # rospy.sleep(10)
+        # ur5.set_joint_angles(movearm)
+
+        # # pantry left table turn toward south
         # client_coordinates(14.4, -1.0, south)
 
-        # # pantry right table
+        # # # pantry right table
         # client_coordinates(11.4, -1.0, south)
+
+        # ur5.set_joint_angles(pantry)
 
         # rospy.sleep(10)
 

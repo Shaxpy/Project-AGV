@@ -175,6 +175,32 @@ def client_coordinates(x, y, ori):
         # Result of executing the action
         return client.get_result()
 
+def object_coordinates(object_number):
+    measure1 = time.time()
+    tfbuffer = tf2_ros.Buffer()
+
+    listener = tf2_ros.TransformListener(tfbuffer)
+    rate = rospy.Rate(10.0)
+    while not rospy.is_shutdown():
+        try:
+            if(time.time() - measure1 > 10.00):
+		        object = 0.0
+		        print("time done")
+                	break
+            # Replace 'object_43' with appropriate name.
+            trans1 = tfbuffer.lookup_transform(
+                'ebot_base', object_number[0] , rospy.Time()) or tfbuffer.lookup_transform(
+                'ebot_base', object_number[1], rospy.Time()) or tfbuffer.lookup_transform(
+                'ebot_base', object_number[2], rospy.Time()) 
+            # object_1 is a vector containing x, y, z values of object 1.
+            # object_1.x gives x coordinate of object 1.
+            object = trans1.transform.translation
+            break
+        except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
+            print "Error"
+    return object
+
+
 
 # Python node executed as main process
 if __name__ == '__main__':
@@ -229,63 +255,104 @@ if __name__ == '__main__':
 
         # /////////////////////////////////
         print "getting coords"
-        tfbuffer = tf2_ros.Buffer()
 
-        listener = tf2_ros.TransformListener(tfbuffer)
-        rate = rospy.Rate(10.0)
-        while not rospy.is_shutdown():
-            try:
-                # Replace 'object_43' with appropriate name.
-                trans1 = tfbuffer.lookup_transform(
-                    'ebot_base', 'object_53', rospy.Time()) or tfbuffer.lookup_transform(
-                    'ebot_base', 'object_54', rospy.Time()) or tfbuffer.lookup_transform(
-                    'ebot_base', 'object_55', rospy.Time())
-                # object_1 is a vector containing x, y, z values of object 1.
-                # object_1.x gives x coordinate of object 1.
-                print "coke"
-                coke = trans1.transform.translation
-                print coke
-                break
-            except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
-                print "Error"
+        coke = object_coordinates(['object_53','object_54','object_54'])
+        print coke   
 
-        ur5_pose_1 = geometry_msgs.msg.Pose()
-        ur5_pose_1.position.x = coke.x - 0.23
-        ur5_pose_1.position.y = coke.y
-        ur5_pose_1.position.z = coke.z + 0.20
-        ur5_pose_1.orientation.x = -0.65849536
-        ur5_pose_1.orientation.y = -0.68264492
-        ur5_pose_1.orientation.z = 0.22230603
-        ur5_pose_1.orientation.w = 0.22574281
+        if (coke == 0.0):
 
-        ur5_pose_2 = geometry_msgs.msg.Pose()
-        ur5_pose_2.position.x = coke.x - 0.14
-        ur5_pose_2.position.y = coke.y
-        ur5_pose_2.position.z = coke.z + 0.14
-        ur5_pose_2.orientation.x = -0.65849536
-        ur5_pose_2.orientation.y = -0.68264492
-        ur5_pose_2.orientation.z = 0.22230603
-        ur5_pose_2.orientation.w = 0.22574281
+            # # pantry left table turn toward south
+            client_coordinates(14.4, -1.0, south)
 
-        ur5_pose_3 = geometry_msgs.msg.Pose()
-        ur5_pose_3.position.x = coke.x - 0.14
-        ur5_pose_3.position.y = coke.y
-        ur5_pose_3.position.z = coke.z + 0.30
-        ur5_pose_3.orientation.x = -0.65849536
-        ur5_pose_3.orientation.y = -0.68264492
-        ur5_pose_3.orientation.z = 0.22230603
-        ur5_pose_3.orientation.w = 0.22574281
+            # pantry right table
+            client_coordinates(11.4, -1.0, south)
+            coke = object_coordinates(['object_53','object_54','object_54'])
 
-        print "getting some coke"
-        ur5.go_to_pose(ur5_pose_1)
-        ur5.go_to_pose(ur5_pose_2)
+            if (coke !=0):
 
-        print "grabbing the coke"
-        ur5.set_gripper_angles(close)
-        rospy.sleep(2)
-        ur5.go_to_pose(ur5_pose_3)
+                ur5_pose_1 = geometry_msgs.msg.Pose()
+                ur5_pose_1.position.x = coke.x - 0.23
+                ur5_pose_1.position.y = coke.y
+                ur5_pose_1.position.z = coke.z + 0.20
+                ur5_pose_1.orientation.x = -0.65849536
+                ur5_pose_1.orientation.y = -0.68264492
+                ur5_pose_1.orientation.z = 0.22230603
+                ur5_pose_1.orientation.w = 0.22574281
 
-        ur5.set_joint_angles(movearm)
+                ur5_pose_2 = geometry_msgs.msg.Pose()
+                ur5_pose_2.position.x = coke.x - 0.14
+                ur5_pose_2.position.y = coke.y
+                ur5_pose_2.position.z = coke.z + 0.14
+                ur5_pose_2.orientation.x = -0.65849536
+                ur5_pose_2.orientation.y = -0.68264492
+                ur5_pose_2.orientation.z = 0.22230603
+                ur5_pose_2.orientation.w = 0.22574281
+
+                ur5_pose_3 = geometry_msgs.msg.Pose()
+                ur5_pose_3.position.x = coke.x - 0.14
+                ur5_pose_3.position.y = coke.y
+                ur5_pose_3.position.z = coke.z + 0.30
+                ur5_pose_3.orientation.x = -0.65849536
+                ur5_pose_3.orientation.y = -0.68264492
+                ur5_pose_3.orientation.z = 0.22230603
+                ur5_pose_3.orientation.w = 0.22574281
+
+                print "getting some coke"
+                ur5.go_to_pose(ur5_pose_1)
+                ur5.go_to_pose(ur5_pose_2)
+
+                print "grabbing the coke"
+                ur5.set_gripper_angles(close)
+                rospy.sleep(2)
+                ur5.go_to_pose(ur5_pose_3)
+
+                ur5.set_joint_angles(movearm)
+            
+            # # pantry right table turn toward north
+            client_coordinates(11.6, -1.0, north)
+
+        else:
+
+            ur5_pose_1 = geometry_msgs.msg.Pose()
+            ur5_pose_1.position.x = coke.x - 0.23
+            ur5_pose_1.position.y = coke.y
+            ur5_pose_1.position.z = coke.z + 0.20
+            ur5_pose_1.orientation.x = -0.65849536
+            ur5_pose_1.orientation.y = -0.68264492
+            ur5_pose_1.orientation.z = 0.22230603
+            ur5_pose_1.orientation.w = 0.22574281
+
+            ur5_pose_2 = geometry_msgs.msg.Pose()
+            ur5_pose_2.position.x = coke.x - 0.14
+            ur5_pose_2.position.y = coke.y
+            ur5_pose_2.position.z = coke.z + 0.14
+            ur5_pose_2.orientation.x = -0.65849536
+            ur5_pose_2.orientation.y = -0.68264492
+            ur5_pose_2.orientation.z = 0.22230603
+            ur5_pose_2.orientation.w = 0.22574281
+
+            ur5_pose_3 = geometry_msgs.msg.Pose()
+            ur5_pose_3.position.x = coke.x - 0.14
+            ur5_pose_3.position.y = coke.y
+            ur5_pose_3.position.z = coke.z + 0.30
+            ur5_pose_3.orientation.x = -0.65849536
+            ur5_pose_3.orientation.y = -0.68264492
+            ur5_pose_3.orientation.z = 0.22230603
+            ur5_pose_3.orientation.w = 0.22574281
+            print "getting some coke"
+            ur5.go_to_pose(ur5_pose_1)
+            ur5.go_to_pose(ur5_pose_2)
+
+            print "grabbing the coke"
+            ur5.set_gripper_angles(close)
+            rospy.sleep(2)
+            ur5.go_to_pose(ur5_pose_3)
+
+            ur5.set_joint_angles(movearm)
+
+
+            # # pantry left table turn toward south
+            client_coordinates(14.4, -1.0, south)
 
         # uuid1 = roslaunch.rlutil.get_or_generate_uuid(None, False)
         # roslaunch.configure_logging(uuid1)
@@ -300,18 +367,11 @@ if __name__ == '__main__':
         # # rospy.sleep(10)
         # ur5.set_joint_angles(movearm)
 
-        # # pantry left table turn toward south
-        client_coordinates(14.4, -1.0, south)
-
-        # # # pantry right table
-        # client_coordinates(11.4, -1.0, south)
-
         # ur5.set_joint_angles(pantry)
 
         # rospy.sleep(10)
 
-        # # # pantry right table turn toward north
-        # client_coordinates(11.6, -1.0, north)
+
 
         # # # # pantry inside
         client_coordinates(13.12, -1.0, west)

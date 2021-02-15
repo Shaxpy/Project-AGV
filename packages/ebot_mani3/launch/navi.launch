@@ -28,8 +28,8 @@
 <rosparam file="$(find ebot_mani3)/config/trajectory_planner.yaml" command="load" />
 
   </node>
-
+<!--
   <node pkg="ebot_mani3" name="seq" type="seq.py" > </node>
-
+-->
 </launch>
 

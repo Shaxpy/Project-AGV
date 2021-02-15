@@ -23,7 +23,7 @@
 		<param name="approx_sync" value="$(arg approx_sync)" type="bool"/>
 		<param name="pnp" value="$(arg pnp)" type="bool"/>
 
-		<param name="session_path" value="$(find object_recognition)/task5_1.bin" type="str"/>
+		<param name="session_path" value="$(find object_recognition)/akhil2.bin" type="str"/>
 
 		<remap from="rgb/image_rect_color" to="$(arg rgb_topic)"/>
 		<remap from="depth_registered/image_raw" to="$(arg depth_topic)"/>

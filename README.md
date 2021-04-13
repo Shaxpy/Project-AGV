@@ -5,7 +5,7 @@
 - ![](https://github.com/Shaxpy/Project-AGV/blob/master/project_img/nav.png)
 - For Navigation, we tuned the **base_local_planner in the move_base package** of ROS taking into account global and local costmaps along with the trajectory planner! [move_base](http://wiki.ros.org/move_base) <br>
 - For Perception, we used [find_object_2d](http://wiki.ros.org/find_object_2d) <br>
-- ![](https://github.com/Shaxpy/Project-AGV/blob/master/project_img/find_obj.jpg)
+- ![](https://github.com/Shaxpy/Project-AGV/blob/master/project_img/find_obj.jpg) ![](https://github.com/Shaxpy/Project-AGV/blob/master/project_img/find_obj2.jpg)
 - Pick and Place, we used OMPL motion planning library,we tried many asymptotically optimal planners that we used in MoveIt and ended up optimising with (T-RRT)
 - ![](https://github.com/Shaxpy/Project-AGV/blob/master/project_img/place.jpg)
 ### Some References while completing this project 

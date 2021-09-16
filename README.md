@@ -7,7 +7,7 @@
 - For Perception, we used [find_object_2d](http://wiki.ros.org/find_object_2d) <br>
 ![](https://github.com/Shaxpy/Project-AGV/blob/master/project_img/find_obj.jpg) 
 ![](https://github.com/Shaxpy/Project-AGV/blob/master/project_img/find_obj2.jpeg)
-- Pick and Place, we used OMPL motion planning library,we tried many asymptotically optimal planners that we used in MoveIt and ended up optimising with (T-RRT)
+- Pick and Place, we used OMPL motion planning library,we tried many asymptotically optimal planners that we used in MoveIt and ended up optimising with (T-RRT) <br>
 ![](https://github.com/Shaxpy/Project-AGV/blob/master/project_img/place.jpg)
 ### Some References while completing this project 
 #### BUG Algorithms
